@@ -62,7 +62,6 @@ behaviors {
   };
 };
 
-
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -71,6 +70,9 @@ behaviors {
             then-layer = <ADJUST>;
         };
     };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
