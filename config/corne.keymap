@@ -64,6 +64,13 @@ behaviors {
 
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUM SYMB>;
+            then-layer = <ADJUST>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -151,11 +158,4 @@ behaviors {
 //                        >;
 //                };
 //        };
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUM SYMB>;
-            then-layer = <ADJUST>;
-        };
-    };
 };
