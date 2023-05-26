@@ -14,55 +14,18 @@
 #define SYMB 2
 #define ADJUST 3
 
+#define XXXXX &none
+#define _____ &trans
+
 // Behavior Overrides
 &lt {
     tapping-term-ms = <200>;
     flavor = "hold-preferred";
 };
 
-behaviors {
-
-  td_multi_windows: tap_dance_multi_windows {
-    compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_MULTI_WINDOWS";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&kp ESC>, <&kp LGUI>;
-  };
-
-  bm: bottom_row_mods {
-    compatible = "zmk,behavior-hold-tap";
-    label = "BOTTOM_ROW_MODS";
-    #binding-cells = <2>;
-    tapping-term-ms = <135>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-  };
-
-  cm: code_row_mods {
-    compatible = "zmk,behavior-hold-tap";
-    label = "CODE_ROW_MODS";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-    retro-tap;
-  };
-
-  sm: space_mod {
-    compatible = "zmk,behavior-hold-tap";
-    label = "SPACE_MOD";
-    #binding-cells = <2>;
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    bindings = <&kp>, <&kp>;
-  };
-};
 
 / {
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -70,9 +33,50 @@ behaviors {
             then-layer = <ADJUST>;
         };
     };
-};
 
-/ {
+
+    behaviors {
+
+      td_multi_windows: tap_dance_multi_windows {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_MULTI_WINDOWS";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp ESC>, <&kp LGUI>;
+      };
+
+      bm: bottom_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "BOTTOM_ROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <135>;
+        quick-tap-ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+      };
+
+      cm: code_row_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "CODE_ROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+        retro-tap;
+      };
+
+      sm: space_mod {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SPACE_MOD";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        bindings = <&kp>, <&kp>;
+      };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
