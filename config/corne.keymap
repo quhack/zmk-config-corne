@@ -87,9 +87,9 @@
 // | - |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | - |
 //                    | ALT | CTRL | SPC |   | TAB | ENTR |wintap|
                         bindings = <
-   &none &kp Q       &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P          &none
-   &none &kp A       &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI       &none
-   &none &bm LSHFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &bm RSHFT FSLH &none
+   XXXXX &kp Q       &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P          XXXXX
+   XXXXX &kp A       &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI       XXXXX
+   XXXXX &bm LSHFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &bm RSHFT FSLH XXXXX
         &kp LALT &kp LCTRL &lt NUM SPACE           &lt SYMB TAB &kp ENTER &td_multi_windows
                         >;
                 };
@@ -101,10 +101,10 @@
 // | - |xxxxxx|^^^^^^|xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|  1  |  2  |  3  |  .  | - |
 //                   |xxxxxx|xxxxxx| ^^^^ |   | ^^^^ |xxxxxx|xxxxxx|
                         bindings = <
-   &none &none &none &none &none &none   &none &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0 &none
-   &none &none &none &none &none &none   &none &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_SLASH &none
-   &none &trans &none &none &none &none   &none &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT &none
-                  &none  &none  &trans      &trans  &none   &none
+   XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX   XXXXX &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0 XXXXX
+   XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX   XXXXX &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_SLASH XXXXX
+   XXXXX _____ XXXXX XXXXX XXXXX XXXXX   XXXXX &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT XXXXX
+                  XXXXX  XXXXX  _____      _____  XXXXX   XXXXX
                         >;
                 };
 
@@ -115,10 +115,10 @@
 // | - |  ~  |  `  |xxxxx|xxxxx|xxxxxx|   |xxxxx|xxxxx|  _  |  +  |xxxxx| - |
 //                    |xxxxx|xxxxx|^^^^^|   |^^^^^|xxxxx|xxxxx|
                         bindings = <
-   &none  &kp EXCL &kp DQT &kp LS(3) &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL &none
-   &none &none  &kp PIPE &kp LBRC   &kp LBKT   &kp LPAR      &kp RPAR &kp RBKT &kp RBRC &kp NUBS &kp NUHS &none
-   &none &kp TILDE &kp GRAVE &none   &none   &none      &none &none  &kp UNDERSCORE &kp PLUS &none &none
-                             &none &none   &trans   &trans   &none    &none
+   XXXXX  &kp EXCL &kp DQT &kp LS(3) &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp EQUAL XXXXX
+   XXXXX XXXXX  &kp PIPE &kp LBRC   &kp LBKT   &kp LPAR      &kp RPAR &kp RBKT &kp RBRC &kp NUBS &kp NUHS XXXXX
+   XXXXX &kp TILDE &kp GRAVE XXXXX   XXXXX   XXXXX      XXXXX XXXXX  &kp UNDERSCORE &kp PLUS XXXXX XXXXX
+                             XXXXX XXXXX   _____   _____   XXXXX    XXXXX
                         >;
                 };
                 adjusts {
@@ -128,40 +128,11 @@
 // | - | F10 | F1  | F2  | F3  |VOL_D|   |xxxxx|xxxxx|xxxxx|xxxxx|xxxxx| - |
 //                    |xxxxx|xxxxx|^^^^^^|   |^^^^^|xxxxx|xxxxx|
                         bindings = <
-   &none  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   &none &none  &none &none &kp C_RESET &none
-   &none  &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_UP      &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &none  &kp F10 &kp F1 &kp F2 &kp F3 &kp C_VOL_DN     &none &none  &none &none &none &none
-                             &none &none   &trans   &trans   &none    &none
+   XXXXX  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   XXXXX XXXXX XXXXX XXXXX &kp C_RESET XXXXX
+   XXXXX  &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_UP      &kp LEFT &kp DOWN &kp UP &kp RIGHT XXXXX XXXXX
+   XXXXX  &kp F10 &kp F1 &kp F2 &kp F3 &kp C_VOL_DN     XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX
+                             XXXXX XXXXX   _____   _____   XXXXX XXXXX
                         >;
                 };
-
-
-//                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-//                        bindings = <
-//   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-//   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-//   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-//                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-//                        >;
-//                };
-
-//                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-//                        bindings = <
-//   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-//   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-//   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-//                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
-//                        >;
-//                };
-//        };
+        }
 };
