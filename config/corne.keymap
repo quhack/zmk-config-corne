@@ -3,6 +3,10 @@
  *
  * SPDX-License-Identifier: MIT
  */
+// DEL and bckspc and numberlock/ gui and win? caps lock
+// also, how to shift-arrows, ctrl-shift-arrows, etc.
+// escape
+// also check the £ sign
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -13,6 +17,7 @@
 #define NUM 1
 #define SYMB 2
 #define ADJUST 3
+#define BTOOTH 4
 
 #define XXXXX &none
 #define _____ &trans
@@ -123,15 +128,29 @@
                 };
                 adjusts {
 // -----------------------------------------------------------------------------------------
-// | - | F12 | F7  | F8  | F9  |  *  |   |xxxxx|xxxxx|xxxxx|xxxxx|RESET| - |
+// | - | F12 | F7  | F8  | F9  |  *  |   |xxxxx|xxxxx|xxxxx|xxxxx|TO BT| - |
 // | - | F11 | F4  | F5  | F6  |VOL_U|   | LEFT| DOWN|  UP |RIGHT|xxxxx| - |
 // | - | F10 | F1  | F2  | F3  |VOL_D|   |xxxxx|xxxxx|xxxxx|xxxxx|xxxxx| - |
 //                    |xxxxx|xxxxx|^^^^^^|   |^^^^^|xxxxx|xxxxx|
                         bindings = <
-   XXXXX  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   XXXXX XXXXX XXXXX XXXXX &kp C_RESET XXXXX
+   XXXXX  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   XXXXX XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
    XXXXX  &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_UP      &kp LEFT &kp DOWN &kp UP &kp RIGHT XXXXX XXXXX
    XXXXX  &kp F10 &kp F1 &kp F2 &kp F3 &kp C_VOL_DN     XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX
                              XXXXX XXXXX   _____   _____   XXXXX XXXXX
+                        >;
+                };
+
+                bluetooth {
+// -----------------------------------------------------------------------------------------
+// | - | BT 0 | BT 1 | BT 2 | BT 3 | BT 4 |   |BT RES|xxxxxx|xxxxxx|xxxxxx|OFF BT| - |
+// | - |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx| - |
+// | - |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx| - |
+//                   |xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|
+                        bindings = <
+   XXXXX &bt BTSEL 0 &bt BTSEL 1 &bt BTSEL 2 &bt BTSEL 3 &bt BTSEL 4   BTRESET XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
+   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX XXXXX    XXXXX    XXXXX
+   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX XXXXX    XXXXX    XXXXX
+                                    XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX
                         >;
                 };
         };
