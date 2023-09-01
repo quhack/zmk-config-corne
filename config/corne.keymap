@@ -147,10 +147,10 @@
 // | - |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx| - |
 //                   |xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|
                         bindings = <
-   XXXXX &bt BTSEL 0 &bt BTSEL 1 &bt BTSEL 2 &bt BTSEL 3 &bt BTSEL 4   BTRESET XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
-   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX XXXXX    XXXXX    XXXXX
-   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX XXXXX    XXXXX    XXXXX
-                                    XXXXX       XXXXX       XXXXX       XXXXX  XXXXX XXXXX
+   XXXXX &bt BTSEL 0 &bt BTSEL 1 &bt BTSEL 2 &bt BTSEL 3 &bt BTSEL 4   &bt BT_CLR XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
+   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX XXXXX    XXXXX    XXXXX
+   XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX XXXXX    XXXXX    XXXXX
+                                    XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX
                         >;
                 };
         };
