@@ -126,6 +126,7 @@
                              XXXXX XXXXX   _____   _____   XXXXX    XXXXX
                         >;
                 };
+
                 adjusts {
 // -----------------------------------------------------------------------------------------
 // | - | F12 | F7  | F8  | F9  |  *  |   |xxxxx|xxxxx|xxxxx|xxxxx|TO BT| - |
@@ -133,7 +134,7 @@
 // | - | F10 | F1  | F2  | F3  |VOL_D|   |xxxxx|xxxxx|xxxxx|xxxxx|xxxxx| - |
 //                    |xxxxx|xxxxx|^^^^^^|   |^^^^^|xxxxx|xxxxx|
                         bindings = <
-   XXXXX  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   XXXXX XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
+   XXXXX  &kp F12 &kp F7 &kp F8 &kp F9 &kp KP_ASTERISK   XXXXX XXXXX XXXXX XXXXX &to BTOOTH XXXXX
    XXXXX  &kp F11 &kp F4 &kp F5 &kp F6 &kp C_VOL_UP      &kp LEFT &kp DOWN &kp UP &kp RIGHT XXXXX XXXXX
    XXXXX  &kp F10 &kp F1 &kp F2 &kp F3 &kp C_VOL_DN     XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX
                              XXXXX XXXXX   _____   _____   XXXXX XXXXX
@@ -147,7 +148,7 @@
 // | - |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|xxxxxx|xxxxxx| - |
 //                   |xxxxxx|xxxxxx|xxxxxx|   |xxxxxx|xxxxxx|xxxxxx|
                         bindings = <
-   XXXXX &bt BTSEL 0 &bt BTSEL 1 &bt BTSEL 2 &bt BTSEL 3 &bt BTSEL 4   &bt BT_CLR XXXXX XXXXX XXXXX &tog BTOOTH XXXXX
+   XXXXX &bt BTSEL 0 &bt BTSEL 1 &bt BTSEL 2 &bt BTSEL 3 &bt BTSEL 4   &bt BT_CLR XXXXX XXXXX XXXXX &to QWERTY XXXXX
    XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX XXXXX    XXXXX    XXXXX
    XXXXX    XXXXX       XXXXX       XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX XXXXX    XXXXX    XXXXX
                                     XXXXX       XXXXX       XXXXX        XXXXX    XXXXX XXXXX
