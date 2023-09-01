@@ -115,10 +115,10 @@
 // | - |  ~  |  `  |xxxxx|xxxxx|xxxxx|   |xxxxx|xxxxx|  _  |  +  |xxxxx| - |
 //                 |xxxxx|^^^^^|^^^^^|   |^^^^^|xxxxx|xxxxx|
                         bindings = <
-   XXXXX  &kp EXCL  &kp DQT   &kp LS(3)  &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK      &kp MINUS &kp EQUAL XXXXX
-   XXXXX  XXXXX     &kp PIPE  &kp LBRC   &kp LBKT   &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC       &kp NUBS  &kp NUHS  XXXXX
-   XXXXX  &kp TILDE &kp GRAVE XXXXX      XXXXX      XXXXX       XXXXX     XXXXX     &kp UNDERSCORE &kp PLUS  XXXXX     XXXXX
-                                      XXXXX _____   _____       _____   XXXXX    XXXXX
+   XXXXX  &kp EXCL  &kp DQT   &kp LS(N3)  &kp DLLR   &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK      &kp MINUS &kp EQUAL XXXXX
+   XXXXX  XXXXX     &kp PIPE  &kp LBRC    &kp LBKT   &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC       &kp NUBS  &kp NUHS  XXXXX
+   XXXXX  &kp TILDE &kp GRAVE XXXXX       XXXXX      XXXXX       XXXXX     XXXXX     &kp UNDERSCORE &kp PLUS  XXXXX     XXXXX
+                                       XXXXX _____   _____       _____   XXXXX    XXXXX
                         >;
                 };
                 adjusts {
